@@ -41,11 +41,11 @@ import mapboxgl from 'mapbox-gl';
 				this.stores.forEach(store => {
 					const element = document.createElement('div');
 					element.className = 'marker';
-					element.style.backgroundImage = `url(/images/rema.png)`;
+					element.style.backgroundImage = `url(/images/location-tag.svg)`;
 					element.style.backgroundSize = '100%';	
 					
 					const popUpMarker = new mapboxgl.Popup()
-					.setHTML(store.properties.shopName)	
+					.setHTML(store.properties.shopName)
 
 					new mapboxgl.Marker(element)
 					.setLngLat([store.geometry.coordinates[0], store.geometry.coordinates[1]])
@@ -112,8 +112,8 @@ import mapboxgl from 'mapbox-gl';
 
 <style>
 	#map {
-		width: 100%;
-		height: 100%;
+		width: 100vw;
+		height: 100vh;
 	}
 
 	.marker {
