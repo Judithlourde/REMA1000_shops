@@ -1,11 +1,18 @@
 <template>
-	<div id="map">Home</div>
+	<div id="map">
+		<LoadingPage />
+	</div>
 </template>
 
 <script>
-import mapboxgl from 'mapbox-gl';
+	import mapboxgl from 'mapbox-gl';
+	import LoadingPage from '../components/LoadingPage.vue'
 
 	export default {
+		components: {
+			LoadingPage
+		},
+		
 		data() {
 			return {
 				mapbox_id: import.meta.env.VITE_MAPBOX_ID,
