@@ -2,15 +2,18 @@
 	<div id="map">
 		<LoadingPage />
 	</div>
+	<Header />
 </template>
 
 <script>
 	import mapboxgl from 'mapbox-gl';
 	import LoadingPage from '../components/LoadingPage.vue'
+	import Header from '../components/Header.vue'
 
 	export default {
 		components: {
-			LoadingPage
+			LoadingPage,
+			Header
 		},
 		
 		data() {
