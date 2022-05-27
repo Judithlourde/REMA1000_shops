@@ -18,7 +18,7 @@
 		
 		data() {
 			return {
-				mapbox_id: import.meta.env.VITE_MAPBOX_ID,
+				// mapbox_id: import.meta.env.VITE_MAPBOX_ID,
 				stores: [],
 			}
 		},
@@ -36,7 +36,7 @@
 			},
 
 			async setupMap(center) {
-				mapboxgl.accessToken = pk.eyJ1IjoianVkaXRocGV0ZXIiLCJhIjoiY2wwZ2Zpa2RrMTJpcDNjcXRwbmYxenpiMyJ9.D4zoWLd-CJlmV2ojxd824Q
+				mapboxgl.accessToken = 'pk.eyJ1IjoianVkaXRocGV0ZXIiLCJhIjoiY2wzb2ZyZGhyMDBtNTNsbnN5d2owZjNyMCJ9.CHZDhIJBHcWZSf9opSfCtQ'
 				const map = new mapboxgl.Map({
 					container: 'map', // container ID
 					style: 'mapbox://styles/mapbox/streets-v11', // style URL
@@ -67,7 +67,7 @@
 				map.addControl(new mapboxgl.NavigationControl());
 				map.addControl(
 					new MapboxDirections({
-						accessToken: pk.eyJ1IjoianVkaXRocGV0ZXIiLCJhIjoiY2wwZ2Zpa2RrMTJpcDNjcXRwbmYxenpiMyJ9.D4zoWLd-CJlmV2ojxd824Q
+						accessToken: 'pk.eyJ1IjoianVkaXRocGV0ZXIiLCJhIjoiY2wzb2ZyZGhyMDBtNTNsbnN5d2owZjNyMCJ9.CHZDhIJBHcWZSf9opSfCtQ'
 					}),
 					'top-left'
 				);	
