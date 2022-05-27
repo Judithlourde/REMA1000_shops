@@ -18,7 +18,7 @@
 		
 		data() {
 			return {
-				mapbox_id: pk.eyJ1IjoianVkaXRocGV0ZXIiLCJhIjoiY2wwZ2Zpa2RrMTJpcDNjcXRwbmYxenpiMyJ9.D4zoWLd-CJlmV2ojxd824Q,
+				mapbox_id:pk.eyJ1IjoianVkaXRocGV0ZXIiLCJhIjoiY2wwZ2Zpa2RrMTJpcDNjcXRwbmYxenpiMyJ9.D4zoWLd-CJlmV2ojxd824Q,
 				stores: [],
 			}
 		},
