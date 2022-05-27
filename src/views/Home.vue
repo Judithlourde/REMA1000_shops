@@ -36,7 +36,7 @@
 			},
 
 			async setupMap(center) {
-				mapboxgl.accessToken = this.mapbox_id;
+				mapboxgl.accessToken = pk.eyJ1IjoianVkaXRocGV0ZXIiLCJhIjoiY2wwZ2Zpa2RrMTJpcDNjcXRwbmYxenpiMyJ9.D4zoWLd-CJlmV2ojxd824Q;
 				const map = new mapboxgl.Map({
 					container: 'map', // container ID
 					style: 'mapbox://styles/mapbox/streets-v11', // style URL
