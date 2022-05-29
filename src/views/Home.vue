@@ -51,7 +51,7 @@
 				this.stores.forEach(store => {
 					const element = document.createElement('div');
 					element.className = 'marker';
-					element.style.backgroundImage = `url(/images/location-tag.svg)`;
+					element.style.backgroundImage = `url(/images/rema.png)`;
 					element.style.backgroundSize = '100%';	
 					
 					const popUpMarker = new mapboxgl.Popup()
